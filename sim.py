@@ -5,12 +5,12 @@ import numpy
 from std_msgs.msg import *
 
 def talker(jointVariable, time):
-	pubJoint1 = rospy.Publisher('/lir3/joint1_position_controller/command', Float64, queue_size=10)
-	pubJoint2 = rospy.Publisher('/lir3/joint2_position_controller/command', Float64, queue_size=10)
-	pubJoint3 = rospy.Publisher('/lir3/joint3_position_controller/command', Float64, queue_size=10)
-	pubJoint4 = rospy.Publisher('/lir3/joint4_position_controller/command', Float64, queue_size=10)
-	pubJoint5 = rospy.Publisher('/lir3/joint5_position_controller/command', Float64, queue_size=10)
-	pubJoint6 = rospy.Publisher('/lir3/joint6_position_controller/command', Float64, queue_size=10)
+	pubJoint1 = rospy.Publisher('/ur5/joint1_position_controller/command', Float64, queue_size=10)
+	pubJoint2 = rospy.Publisher('/ur5/joint2_position_controller/command', Float64, queue_size=10)
+	pubJoint3 = rospy.Publisher('/ur5/joint3_position_controller/command', Float64, queue_size=10)
+	pubJoint4 = rospy.Publisher('/ur5/joint4_position_controller/command', Float64, queue_size=10)
+	pubJoint5 = rospy.Publisher('/ur5/joint5_position_controller/command', Float64, queue_size=10)
+	pubJoint6 = rospy.Publisher('/ur5/joint6_position_controller/command', Float64, queue_size=10)
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(100)
 	i = 0
